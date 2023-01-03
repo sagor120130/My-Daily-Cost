@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-gradient-to-r from-purple-500 to-pink-500">
+  
+    <h2 class="font-bold text-4xl text-center mt-16 mb-10">
+        My Daily <span class="text-teal-300">Cost</span>
+      </h2>
+    
+<div class="p-5">
+    <div class="grid grid-cols-3 mt-16 gap-4 flex justify-center w-full">
+        <div class="bg-lime-400 h-[250px] rounded  border-2">
+            <h3 class="text-center text-blck font-bold mt-5 text-2xl underline underline-offset-8 ">Deposite</h3>
+            <h3 class="text-center text-red-50 font-bold mt-10 text-3xl">
+                $ <span id="deposite-blance">0.0</span>
+              </h3>
+        </div>
+
+        <div class="bg-blue-500 h-[250px] rounded border-2">
+            <h3 class="text-center text-blck font-bold mt-5 text-2xl underline underline-offset-8">Withdraw</h3>
+            <h3 class="text-center text-red-50 font-bold mt-10 text-3xl">
+              $
+              <span id="withdraw-blance">0.0</span>
+            </h3>
+          </div>
+
+          <div class="bg-orange-500 h-[250px] rounded border-2">
+            <h3 class="text-center text-blck font-bold mt-5 text-2xl underline underline-offset-8">Total Balance</h3>
+            <h3 class="text-center text-red-50 font-bold mt-10 text-3xl">
+              $
+              <span id="total-blance">500</span>
+            </h3>
+          </div>
+    </div>
+
+    <div class="grid grid-cols-3 mt-16 gap-20 flex justify-center w-full">
+        <div class=" bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded p-5">
+          <input
+            id="deposite-input"
+            class="rounded p-2 w-9/12"
+            type="number"
+            placeholder="Enter Amount"
+          />
+          <button
+            id="deposite-btn"
+            class="bg-purple-900 text-green-400 font-bold mt-3 p-3 rounded-2xl"
+          >
+            Deposite
+          </button>
+          
+        </div>
+        <div></div>
+        <div class=" bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded p-5">
+          <input
+            id="withdraw-input"
+            class="rounded p-2 w-9/12"
+            type="number"
+            placeholder="Enter Amount"
+          />
+          <button
+            id="withdraw-btn"
+            class="bg-purple-900 text-green-400 font-bold mt-3 p-3 rounded-2xl"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
